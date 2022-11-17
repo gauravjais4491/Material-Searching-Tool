@@ -428,33 +428,6 @@ textarea {
         padding: 4px 3px;
         margin: 2px 3px;
     }
-    /* .home::before {
-    content: "";
-    position: absolute;
-    background: url("2jpg") no-repeat center center/cover transparent;
-    image-rendering: -webkit-optimize-contrast;
-    background: transparent;
-    image-rendering: pixelated;
-    image-rendering: auto;
-    -ms-interpolation-mode: nearest-neighbor;
-    height: 550px;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    z-index: -100;
-    opacity: 0.89;
-} */
-
-/* .home {
-    font-family: "Bree Serif", serif;
-    display: flex;
-    flex-direction: column;
-    padding: 8px 2px;
-    margin: 1px;
-    align-items: center;
-    justify-content: center;
-} */
-
 .home h1 {
     font-size: 3rem;
     text-align: center;
