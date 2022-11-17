@@ -165,295 +165,295 @@ const data = `[
 
 const data1 = `[
     {
-        "Material Name": "AISI 409",
-        "Young's Modulus": 206,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.5,
+        "Material_Name": "AISI 409",
+        "Young_Modulus": 206,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.5,
         "Density": 7.85
     },
     {
-        "Material Name": "SCM 435",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.38,
+        "Material_Name": "SCM 435",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.38,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1030",
-        "Young's Modulus": 206,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.34,
+        "Material_Name": "AISI 1030",
+        "Young_Modulus": 206,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.34,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1034",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.38,
+        "Material_Name": "AISI 1034",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.38,
         "Density": 7.87
     },
     {
-        "Material Name": "AISI 1035",
-        "Young's Modulus": 196,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.38,
+        "Material_Name": "AISI 1035",
+        "Young_Modulus": 196,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.38,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1038",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.42,
+        "Material_Name": "AISI 1038",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.42,
         "Density": 7.845
     },
     {
-        "Material Name": "AISI 1040",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.44,
+        "Material_Name": "AISI 1040",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.44,
         "Density": 7.845
     },
     {
-        "Material Name": "AISI 1042",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.47,
+        "Material_Name": "AISI 1042",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.47,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1043",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.47,
+        "Material_Name": "AISI 1043",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.47,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1045",
-        "Young's Modulus": 206,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.5,
+        "Material_Name": "AISI 1045",
+        "Young_Modulus": 206,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.5,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1049",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.53,
+        "Material_Name": "AISI 1049",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.53,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1050",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.55,
+        "Material_Name": "AISI 1050",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.55,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1055",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.6,
+        "Material_Name": "AISI 1055",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.6,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1536",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.37,
+        "Material_Name": "AISI 1536",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.37,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1132",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.34,
+        "Material_Name": "AISI 1132",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.34,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1139",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.43,
+        "Material_Name": "AISI 1139",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.43,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1137",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.39,
+        "Material_Name": "AISI 1137",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.39,
         "Density": 7.87
     },
     {
-        "Material Name": "AISI 1140",
-        "Young's Modulus": 210,
-        "Percentage Carbon": 0.44,
+        "Material_Name": "AISI 1140",
+        "Young_Modulus": 210,
+        "Percentage_Carbon": 0.44,
         "Density": 8.03
     },
     {
-        "Material Name": "AISI 1141",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.45,
+        "Material_Name": "AISI 1141",
+        "Young_Modulus": 205,
+        "Poissson_Ratio": 0.29,
+        "Percentage_Carbon": 0.45,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1144",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.45,
-        "Density": 7.85
+        "Material_Name": "AISI 1144",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.45,
+        "Density":_7.85
     },
     {
-        "Material Name": "AISI 1146",
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.49,
+        "Material_Name": "AISI 1146",
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.49,
         "Density": 7.87
     }
 ]`
 
 const data2 = `[
     {
-        "Material Name": "AISI 304",
-        "Young's Modulus": 193,
-        "Poison's Ratio": 0.265,
-        "Percentage Carbon": 0.07,
+        "Material_Name": "AISI 304",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.265,
+        "Percentage_Carbon": 0.07,
         "Density": 8
     },
     {
-        "Material Name": "ASTM A815",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.3,
-        "Percentage Carbon": 0.03,
+        "Material_Name": "ASTM A815",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.03,
         "Density": 7.805
     },
     {
-        "Material Name": "AISI 316L",
-        "Young's Modulus": 193,
-        "Poison's Ratio": 0.25,
-        "Percentage Carbon": 0.03,
+        "Material_Name": "AISI 316L",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.25,
+        "Percentage_Carbon": 0.03,
         "Density": 8
     },
     {
-        "Material Name": "AISI 1005",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.06,
+        "Material_Name": "AISI 1005",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.06,
         "Density": 7.872
     },
     {
-        "Material Name": "SAE AISI 1008",
-        "Young's Modulus": 190,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.1,
+        "Material_Name": "SAE AISI 1008",
+        "Young_Modulus": 190,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.1,
         "Density": 7.872
     },
     {
-        "Material Name": "SAE AISI 1012",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.15,
+        "Material_Name": "SAE AISI 1012",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.15,
         "Density": 7.87
     },
     {
-        "Material Name": "SAE AISI 1015",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.18,
+        "Material_Name": "SAE AISI 1015",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.18,
         "Density": 7.87
     },
     {
-        "Material Name": "SAE AISI 1018",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.2,
+        "Material_Name": "SAE AISI 1018",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.2,
         "Density": 7.87
     },
     {
-        "Material Name": "SAE AISI 1020",
-        "Young's Modulus": 186,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.23,
+        "Material_Name": "SAE AISI 1020",
+        "Young_Modulus": 186,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.23,
         "Density": 7.87
     },
     {
-        "Material Name": "SAE AISI 1022",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.23,
+        "Material_Name": "SAE AISI 1022",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.23,
         "Density": 7.868
     },
     {
-        "Material Name": "AISI 1023",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.25,
+        "Material_Name": "AISI 1023",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.25,
         "Density": 7.858
     },
     {
-        "Material Name": "SAE AISI 1025",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.28,
+        "Material_Name": "SAE AISI 1025",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.28,
         "Density": 7.858
     },
     {
-        "Material Name": "AISI 1026",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.28,
+        "Material_Name": "AISI 1026",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.28,
         "Density": 7.858
     },
     {
-        "Material Name": "SAE AISI 1029",
-        "Young's Modulus": 210,
-        "Poison's Ratio": 0.3,
-        "Percentage Carbon": 0.31,
+        "Material_Name": "SAE AISI 1029",
+        "Young_Modulus": 210,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.31,
         "Density": 8.03
     },
     {
-        "Material Name": "AISI 1108",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.13,
+        "Material_Name": "AISI 1108",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.13,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1110",
-        "Percentage Carbon": 0.13
+        "Material_Name": "AISI 1110",
+        "Percentage_Carbon": 0.13
     },
     {
-        "Material Name": "AISI 1116",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.2,
+        "Material_Name": "AISI 1116",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.2,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1117",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.2,
+        "Material_Name": "AISI 1117",
+        "Young _odulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.2,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1118",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.2,
+        "Material_Name": "AISI 1118",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.2,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1119",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.2,
+        "Material_Name": "AISI 1119",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.2,
         "Density": 7.87
     },
     {
-        "Material Name": "AISI 1211",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.13,
+        "Material_Name": "AISI 1211",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.13,
         "Density": 7.87
     }
 ]`
