@@ -1,167 +1,167 @@
-
 const data = `[
     {
-        "Material Name": "AISI 1059",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.65,
+        "Material_Name": "AISI 1059",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.65,
         "Density": 7.87
     },
     {
-        "Material Name": "AISI 1060",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.66,
+        "Material_Name": "AISI 1060",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.66,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1065",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.7,
+        "Material_Name": "AISI 1065",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.7,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1070",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.75,
+        "Material_Name": "AISI 1070",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.75,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1075",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.8,
+        "Material_Name": "AISI 1075",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.8,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1080",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.88,
+        "Material_Name": "AISI 1080",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.88,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1084",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.93,
+        "Material_Name": "AISI 1084",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.93,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1085",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.95,
+        "Material_Name": "AISI 1085",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.95,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1086",
-        "Young's Modulus": 200,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.93,
+        "Material_Name": "AISI 1086",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.93,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1090",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.98,
+        "Material_Name": "AISI 1090",
+        "Young_Modulus": 205,
+        "Poisons_Ratio": 0.29,
+        "Percentage_Carbon": 0.98,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1095",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 1.03,
+        "Material_Name": "AISI 1095",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 1.03,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 1566",
-        "Young's Modulus": 210,
-        "Poison's Ratio": 0.3,
-        "Percentage Carbon": 0.71,
+        "Material_Name": "AISI 1566",
+        "Young_Modulus": 210,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.71,
         "Density": 7.85
     },
     {
-        "Material Name": "SAE 1572",
-        "Young's Modulus": 210,
-        "Poison's Ratio": 0.3,
-        "Percentage Carbon": 0.76,
+        "Material_Name": "SAE 1572",
+        "Young_Modulus": 210,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.76,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 4161",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.64,
+        "Material_Name": "AISI 4161",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.64,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 4161H",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.65,
+        "Material_Name": "AISI 4161H",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.65,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI E50100 ",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 1.1,
+        "Material_Name": "AISI E50100 ",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 1.1,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 5060",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.64,
+        "Material_Name": "AISI 5060",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.64,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 50B60",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.64,
+        "Material_Name": "AISI 50B60",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.64,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 50B60H",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.65,
+        "Material_Name": "AISI 50B60H",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.65,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI E51100",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 1.1,
+        "Material_Name": "AISI E51100",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 1.1,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 5155",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.59,
+        "Material_Name": "AISI 5155",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.59,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 5155H",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.6,
+        "Material_Name": "AISI 5155H",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.6,
         "Density": 7.85
     },
     {
-        "Material Name": "AISI 5160",
-        "Young's Modulus": 205,
-        "Poison's Ratio": 0.29,
-        "Percentage Carbon": 0.64,
+        "Material_Name": "AISI 5160",
+        "Young_Modulus": 205,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.64,
         "Density": 7.85
     }
 ]`
+
 
 const data1 = `[
     {
@@ -461,29 +461,29 @@ const data2 = `[
 const HCS = JSON.parse(data);
 
 function search() {
-    const sheet = (metals == "hcs") ? data : (metals == "mcs") ? data1 :data2;
+    // const sheet = (metals == "hcs") ? data : (metals == "mcs") ? data1 :data2;
     var mod = document.getElementById('modulus').value;
     var den = document.getElementById('density').value;
     var rate = document.getElementById('ratio').value;
     var crbn = document.getElementById('carbon').value;
 
     HCS.map((item) => {
-        if (item.Density <= den || item["Young's Modulus"] <= mod || item["Percentage Carbon"] <= crbn || item["Poison's Ratio"] <= rate) {
+        if (item.Density <= den || item["Young_Modulus"] <= mod || item["Percentage_Carbon"] <= crbn || item["Poisson_Ratio"] <= rate) {
             var material = document.createElement('ul');
             var name = document.createElement('li');
             var modulus = document.createElement('li');
             var ratio = document.createElement('li');
             var density = document.createElement('li');
             var carbon = document.createElement('li');
-            name.innerText = `Material Name : ${item['Material Name']}`;
+            name.innerText = `Material_Name : ${item['Material_Name']}`;
             material.appendChild(name);
-            modulus.innerText = `Young's modulus : ${item['Young\'s Modulus']}`;
+            modulus.innerText = `Young_modulus : ${item['Young_Modulus']}`;
             material.appendChild(modulus);
-            ratio.innerText = `Poisson's Ratio : ${item['Poison\'s Ratio']}`;
+            ratio.innerText = `Poisson_Ratio : ${item['Poisson_Ratio']}`;
             material.appendChild(ratio);
             density.innerText = `Density : ${item.Density}`;
             material.appendChild(density);
-            carbon.innerText = `Percentage Carbon : ${item['Percentage Carbon']}`;
+            carbon.innerText = `Percentage_Carbon : ${item['Percentage_Carbon']}`;
             material.appendChild(carbon);
             document.getElementById("outputs").appendChild(material);
         }
