@@ -1,0 +1,163 @@
+[
+    {
+        "Material Name": "AISI 1059",
+        "Young's Modulus": 200,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.65,
+        "Density": 7.87
+    },
+    {
+        "Material Name": "AISI 1060",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.66,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 1065",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.7,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 1070",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.75,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 1075",
+        "Young's Modulus": 200,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.8,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 1080",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.88,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 1084",
+        "Young's Modulus": 200,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.93,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 1085",
+        "Young's Modulus": 200,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.95,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 1086",
+        "Young's Modulus": 200,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.93,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 1090",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.98,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 1095",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 1.03,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 1566",
+        "Young's Modulus": 210,
+        "Poison's Ratio": 0.3,
+        "Percentage Carbon": 0.71,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "SAE 1572",
+        "Young's Modulus": 210,
+        "Poison's Ratio": 0.3,
+        "Percentage Carbon": 0.76,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 4161",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.64,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 4161H",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.65,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI E50100 ",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 1.1,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 5060",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.64,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 50B60",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.64,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 50B60H",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.65,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI E51100",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 1.1,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 5155",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.59,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 5155H",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.6,
+        "Density": 7.85
+    },
+    {
+        "Material Name": "AISI 5160",
+        "Young's Modulus": 205,
+        "Poison's Ratio": 0.29,
+        "Percentage Carbon": 0.64,
+        "Density": 7.85
+    }
+]
