@@ -226,28 +226,6 @@ body{
     margin: 1px 10px;
 }
 
-body,
-html {
-    height: 100%;
-    margin: 0;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
-}
-
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-}
-
-html {
-    box-sizing: border-box;
-}
-
-*,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
 /* about  */
 .column {
     float: left;
@@ -286,15 +264,6 @@ html {
 /* about  */
 .button:hover {
     background-color: #555;
-}
-
-
-
-body,
-html {
-    height: 100%;
-    margin: 0;
-    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 
 /* contact and input  */
@@ -391,22 +360,17 @@ textarea {
     border-radius: 24px;
     display: block;
     margin: auto;
-    height: 90px;
+    height: 50px;
     width: 1800px;
     text-align: center;
     padding: 25px 8px;
     font-size: 40px;
-    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
     color: #fd0983;
 }
 
 
 /* for tablets*/
 @media screen and (max-width: 1024) {
-    body{
-
-    }
 }
 
 /*for mobiles*/
