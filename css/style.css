@@ -6,6 +6,7 @@ body{
     background-color:#4caf50 ;
 }
 
+/* nevigation bar  */
 .navbar::before {
     content: "";
     background-color: black;
@@ -26,8 +27,6 @@ body{
     align-items: center;
     
 }
-
-/* logo */
 
 .navbar img {
     height: 70px;
@@ -54,7 +53,6 @@ body{
 
 .navbar ul li a {
     display: block;
-    /* position: relative; */
     text-decoration: none;
     padding: 4px 31px;
     margin: 2px 3px;
@@ -74,7 +72,6 @@ body{
     position: absolute;
     background: url("2jpg") no-repeat center center/cover transparent;
     image-rendering: -webkit-optimize-contrast;
-    /* background: transparent; */
     image-rendering: pixelated;
     image-rendering: auto;
     -ms-interpolation-mode: nearest-neighbor;
@@ -122,11 +119,12 @@ body{
     color: black;
     transform: scale(1.2) perspective(1px)
 }
+
 .btn:active{
     transform: scale(0.9) perspective(1px)
 }
-/* index.html */
 
+/* index.html */
 .service-container h1 {
     font-family: "Bree Serif", serif;
     font-size: 3.5rem;
@@ -156,7 +154,6 @@ body{
 }
 
 /* box */
-
 #box {
     background-color: #d4ffd0;
     border: 2px solid black;
@@ -212,18 +209,6 @@ body{
 #box10 p {
     font-family: "Baloo 2", cursive;
     margin: 8px 10px;
-}
-
-#box1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#box1 img {
-    height: 100px;
-    padding: 5px 6px;
-    margin: 1px 10px;
 }
 
 /* about  */
@@ -309,6 +294,8 @@ textarea {
     margin-bottom: 16px;
     resize: vertical;
 }
+
+/* result */
 #outputs{
     background-color: #d4ffd0;
     border: 2px solid black;
@@ -322,12 +309,14 @@ textarea {
     justify-content: space-evenly;
 }
 
+/* result */
 #outputs > ul{
     margin-top: 20px;
     margin-left: 30px;
     font-size: 20px;
 }
 
+/* result  */
 #name_out{
     margin-bottom: 10px;
 }
@@ -397,7 +386,6 @@ textarea {
     text-align: center;
     padding: 1px 26px;
     margin: 0px;
-    /* color: rgb(30, 26, 223); */
 }
 
 
