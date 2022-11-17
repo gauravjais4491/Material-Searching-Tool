@@ -1,5 +1,4 @@
-//import HCS from './High Carbon Steel.json' assert { type: 'JSON'};
-// import MCS from './Medium Carbon Steel.json';
+
 const data = `[
     {
         "Material Name": "AISI 1059",
@@ -164,7 +163,7 @@ const data = `[
     }
 ]`
 
-const data1=`[
+const data1 = `[
     {
         "Material Name": "AISI 409",
         "Young's Modulus": 206,
@@ -312,7 +311,7 @@ const data1=`[
     }
 ]`
 
-const data2=`[
+const data2 = `[
     {
         "Material Name": "AISI 304",
         "Young's Modulus": 193,
@@ -461,32 +460,30 @@ const data2=`[
 
 const HCS = JSON.parse(data);
 
-function search(){
-    const sheet = (metals=="hcs") ? data : (metals=="mcs") ? data1 : ;
-    //var result = []
+function search() {
+    const sheet = (metals == "hcs") ? data : (metals == "mcs") ? data1 :data2;
     var mod = document.getElementById('modulus').value;
     var den = document.getElementById('density').value;
     var rate = document.getElementById('ratio').value;
     var crbn = document.getElementById('carbon').value;
 
-    HCS.map((item)=>{
-        if(item.Density<=den || item["Young's Modulus"]<=mod || item["Percentage Carbon"]<=crbn || item["Poison's Ratio"]<=rate){
-            //result.push({"Material Name": item["Material Name"], "Young's Modulus": item["Young's Modulus"], "Poisson's Ratio": item["Poison's Ratio"], "Percentage Carbon": item["Percentage Carbon"]});
+    HCS.map((item) => {
+        if (item.Density <= den || item["Young's Modulus"] <= mod || item["Percentage Carbon"] <= crbn || item["Poison's Ratio"] <= rate) {
             var material = document.createElement('ul');
             var name = document.createElement('li');
             var modulus = document.createElement('li');
             var ratio = document.createElement('li');
             var density = document.createElement('li');
             var carbon = document.createElement('li');
-            name.innerText=`Material Name : ${item['Material Name']}`;
+            name.innerText = `Material Name : ${item['Material Name']}`;
             material.appendChild(name);
-            modulus.innerText=`Young's modulus : ${item['Young\'s Modulus']}`;
+            modulus.innerText = `Young's modulus : ${item['Young\'s Modulus']}`;
             material.appendChild(modulus);
-            ratio.innerText=`Poisson's Ratio : ${item['Poison\'s Ratio']}`;
+            ratio.innerText = `Poisson's Ratio : ${item['Poison\'s Ratio']}`;
             material.appendChild(ratio);
-            density.innerText=`Density : ${item.Density}`;
+            density.innerText = `Density : ${item.Density}`;
             material.appendChild(density);
-            carbon.innerText=`Percentage Carbon : ${item['Percentage Carbon']}`;
+            carbon.innerText = `Percentage Carbon : ${item['Percentage Carbon']}`;
             material.appendChild(carbon);
             document.getElementById("outputs").appendChild(material);
         }
