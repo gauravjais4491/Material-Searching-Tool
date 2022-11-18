@@ -160,8 +160,7 @@ const data = `[
         "Percentage_Carbon": 0.64,
         "Density": 7.85
     }
-]`
-
+]`;
 
 const data1 = `[
     {
@@ -309,7 +308,7 @@ const data1 = `[
         "Percentage_Carbon": 0.49,
         "Density": 7.87
     }
-]`
+]`;
 
 const data2 = `[
     {
@@ -456,37 +455,41 @@ const data2 = `[
         "Percentage_Carbon": 0.13,
         "Density": 7.87
     }
-]`
+]`;
 
 const HCS = JSON.parse(data);
 
 function search() {
-    // const sheet = (metals == "hcs") ? data : (metals == "mcs") ? data1 :data2;
-    var mod = document.getElementById('modulus').value;
-    var den = document.getElementById('density').value;
-    var rate = document.getElementById('ratio').value;
-    var crbn = document.getElementById('carbon').value;
+  // const sheet = (metals == "hcs") ? data : (metals == "mcs") ? data1 :data2;
+  var mod = document.getElementById("modulus").value;
+  var den = document.getElementById("density").value;
+  var rate = document.getElementById("ratio").value;
+  var crbn = document.getElementById("carbon").value;
 
-    HCS.map((item) => {
-        if (item.Density <= den || item["Young_Modulus"] <= mod || item["Percentage_Carbon"] <= crbn || item["Poisson_Ratio"] <= rate) {
-            var material = document.createElement('tr');
-            var name = document.createElement('th');
-            var modulus = document.createElement('th');
-            var ratio = document.createElement('th');
-            var density = document.createElement('th');
-            var carbon = document.createElement('th');
-            name.innerText = item['Material_Name'];
-            material.appendChild(name);
-            modulus.innerText = item['Young_Modulus'];
-            material.appendChild(modulus);
-            ratio.innerText = item['Poisson_Ratio'];
-            material.appendChild(ratio);
-            density.innerText = item.Density;
-            material.appendChild(density);
-            carbon.innerText = item['Percentage_Carbon'];
-            material.appendChild(carbon);
-            document.getElementById("outputs").appendChild(material);
-        }
-    });
+  HCS.map((item) => {
+    if (
+      item.Density <= den ||
+      item["Young_Modulus"] <= mod ||
+      item["Percentage_Carbon"] <= crbn ||
+      item["Poisson_Ratio"] <= rate
+    ) {
+      var material = document.createElement("tr");
+      var name = document.createElement("td");
+      var modulus = document.createElement("td");
+      var ratio = document.createElement("td");
+      var density = document.createElement("td");
+      var carbon = document.createElement("td");
+      name.innerText = item["Material_Name"];
+      material.appendChild(name);
+      modulus.innerText = item["Young_Modulus"];
+      material.appendChild(modulus);
+      ratio.innerText = item["Poisson_Ratio"];
+      material.appendChild(ratio);
+      density.innerText = item.Density;
+      material.appendChild(density);
+      carbon.innerText = item["Percentage_Carbon"];
+      material.appendChild(carbon);
+      document.getElementById("outputTable").appendChild(material);
+    }
+  });
 }
-
