@@ -11,7 +11,7 @@
 </head>
 <script type="text/javascript" src="../json/input.js"></script>
 
-<body>
+<body >
     <nav class="navbar">
 
         <div class="logo">
@@ -43,14 +43,35 @@
                     <input type="number" step="any" id="density" name="Density" placeholder="Unit = g/cm^3">
 
                     <label for="Carbon">Carbon Percentage</label>
-                    <input type="number"  step="any" id="carbon" name="Carbon" placeholder="Unit = Percentage">
-                    
+                    <input type="number" step="any" id="carbon" name="Carbon" placeholder="Unit = Percentage">
+
                     <button class="btn" onclick="search()">Search</button>
                     <button class="btn" type="reset">Reset</button>
                 </div>
             </div>
         </div>
-        <div id="outputs">
+        <div id="outputs" onmousedown="return false" onselectstart="return false">
+
+            <table>
+                <tr>
+                    <th>Material Name</th>
+                    <th>Young Modulus</th>
+                    <th>Possion's Ratio</th>
+                    <th>Density</th>
+                    <th>Carbon Percentage</th>
+                </tr>
+                
+                <!-- <tr>
+                    <td>Alfreds Futterkiste</td>
+                    <td>Maria Anders</td>
+                    <td>Germany</td>
+                </tr>
+                <tr>
+                    <td>Centro comercial Moctezuma</td>
+                    <td>Francisco Chang</td>
+                    <td>Mexico</td>
+                </tr> -->
+            </table>
         </div>
     </div>
 </body>

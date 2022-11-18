@@ -303,23 +303,33 @@ textarea {
     display: block;
     margin: auto;
     margin-top: 20px;
-    width: 500px;
+    width: 100%;
     height: max-content;
     padding: 25px 20px;
     justify-content: space-evenly;
 }
 
 /* result */
-#outputs > ul{
+#outputs > tr{
     margin-top: 20px;
-    margin-left: 30px;
+    margin-left: 3000px;
     font-size: 20px;
+}
+#outputs th{
+    margin-left: 0px;
+    padding: 25px 150px;
 }
 
 /* result  */
 #name_out{
-    margin-bottom: 10px;
+    margin-bottom: 100px;
 }
+
+table,th{
+    padding: 25px;
+    /* margin: 10px; */
+}
+
 /* input  */
 #box11 {
     background-color: #d4ffd0;
@@ -388,5 +398,3 @@ textarea {
     margin: 0px;
 }
 }
-
-/* fbbf */

@@ -469,21 +469,21 @@ function search() {
 
     HCS.map((item) => {
         if (item.Density <= den || item["Young_Modulus"] <= mod || item["Percentage_Carbon"] <= crbn || item["Poisson_Ratio"] <= rate) {
-            var material = document.createElement('ul');
-            var name = document.createElement('li');
-            var modulus = document.createElement('li');
-            var ratio = document.createElement('li');
-            var density = document.createElement('li');
-            var carbon = document.createElement('li');
-            name.innerText = `Material_Name : ${item['Material_Name']}`;
+            var material = document.createElement('tr');
+            var name = document.createElement('th');
+            var modulus = document.createElement('th');
+            var ratio = document.createElement('th');
+            var density = document.createElement('th');
+            var carbon = document.createElement('th');
+            name.innerText = item['Material_Name'];
             material.appendChild(name);
-            modulus.innerText = `Young_modulus : ${item['Young_Modulus']}`;
+            modulus.innerText = item['Young_Modulus'];
             material.appendChild(modulus);
-            ratio.innerText = `Poisson_Ratio : ${item['Poisson_Ratio']}`;
+            ratio.innerText = item['Poisson_Ratio'];
             material.appendChild(ratio);
-            density.innerText = `Density : ${item.Density}`;
+            density.innerText = item.Density;
             material.appendChild(density);
-            carbon.innerText = `Percentage_Carbon : ${item['Percentage_Carbon']}`;
+            carbon.innerText = item['Percentage_Carbon'];
             material.appendChild(carbon);
             document.getElementById("outputs").appendChild(material);
         }
