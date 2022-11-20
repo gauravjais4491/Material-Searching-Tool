@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Myonline Metal Searching tool</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
     <script>
@@ -17,10 +17,11 @@
 </head>
 
 <body onmousedown="return false" onselectstart="return false" >
+
     <nav class="navbar">
 
         <div class="logo">
-            <img src="/Images/logo.jpg" alt="">
+            <img src="logo.jpg" alt="">
         </div>
 
         <ul class="nav">
@@ -29,7 +30,6 @@
             <li id="item4"><a href="about.html">About</a></li>
             <li id="item2"><a href="contact.html">Contact Us</a></li>
         </ul>
-
     </nav>
 
     <section class="home">
@@ -37,7 +37,7 @@
     </section>
 
     <section class="Categories">
-        <p>There are two categories in Ferrous Metal, Which Ferrous Metal you are Looking for:</p>
+        <p>There are two categories in Steel, Which Steel you are Looking for:</p>
     </section>
     
     <div class="service-container">
@@ -45,28 +45,26 @@
         <div class="services">
 
             <div id="box">
-                <img src="/Images/Steel.jpeg" alt="" srcset="">
-                <button class="btn" onclick="location.href='steel.html'">Steel</button>
-                <p>Steel is a combination of two elements, iron and carbon. Steel are broken is broken into four types and then in those types steel is broken down into grades. Steel is used for making knives, tools, machines, etc.</p>
+
+                <img src="Stainless Steel.webp" alt="" srcset="">
+                <button class="btn" onclick="categories('Stainless_Steel')">Stainless Steel</button>
+                <p>Stainless steel is an alloy of iron that is resistant to rusting and corrosion. It contains elements such as carbon, other nonmetals and metals to obtain other desired properties.  </p>
             </div>
 
             <div id="box">
-                <img src="/Images/Cast Iron.jpeg" alt="" srcset="">
-                <button class="btn" onclick="categories('Cast_Iron')">Cast Iron</button>
-                <p>Cast Iron, an alloy of iron that contains 2 to 4 percent carbon, along with varying amounts of silicon and manganese and traces of impurities such as sulfur and phosphorus. It is made by reducing iron ore in a blast furnace.</p>
+                <img src="Alloy Steel.jpeg" alt="" srcset="">
+                <button class="btn" onclick="categories('Alloy_Steel')">Alloy Steel</button>
+                <p>Alloy steel is steel that is alloyed with a variety of elements in total amounts between 1.0% and 50% by weight to improve its mechanical properties.Alloy steels used in hydraulic steel structures are usually cast or forged as well.</p>
             </div>
 
             <div id="box">
-                <img src="/Images/Wrought Iron.webp" alt="" srcset="">
-                <button class="btn" onclick="categories('Wrought_Iron')">Wrought Iron</button>
-                <p> Wrought iron is a soft, ductile, fibrous variety that is produced from a semifused mass of relatively pure iron globules partially surrounded by slag. It usually contains less than 0.1 percent carbon and 1 or 2 percent slag. </p>
+                <img src="Carbon Steel.jpeg" alt="" srcset="">
+                <button class="btn" onclick="location.href='Carbon Steel.html'">Carbon Steel</button>
+                <p>Carbon steel is a steel with carbon content from about 0.05 up to 2.1 percent by weight. Carbon steel is a popular metal choice for knife-making due to its high amount of carbon, giving the blade more edge retention. </p>
             </div>
 
         </div>
     </div>
-
-    
-
 </body>
 
 </html>
