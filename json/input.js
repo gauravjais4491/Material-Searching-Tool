@@ -465,6 +465,12 @@ const Oxide_Ceramic = `[]`;
 const Silicate_Ceramic = `[]`;
 const Carbide_Ceramic = `[]`;
 const Nitride_Ceramic = `[]`;
+const Alloys = `[]`;
+const Wrought_Iron = `[]`;
+const Glass_Ceramic = `[]`;
+const Polymer = `[]`;
+const Smart_Material = `[]`;
+const Composite = `[]`;
 
 function search() {
     const cat = localStorage.getItem("category");
@@ -502,6 +508,24 @@ function search() {
             break;
         case "Nitride_Ceramic":
             list = JSON.parse(Nitride_Ceramic);
+            break;
+        case "Alloys":
+            list = JSON.parse(Alloys);
+            break;
+        case "Wrought_Iron":
+            list = JSON.parse(Wrought_Iron);
+            break;
+        case "Glass_Ceramic":
+            list = JSON.parse(Glass_Ceramic);
+            break;
+        case "Polymer":
+            list = JSON.parse(Polymer);
+            break;
+        case "Smart_Material":
+            list = JSON.parse(Smart_Material);
+            break;
+        case "Composite":
+            list = JSON.parse(Composite);
             break;
     }
     var mod = document.getElementById("modulus").value;
