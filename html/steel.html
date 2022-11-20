@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="/css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <script>
+        function categories(category){
+            localStorage.setItem("category", category);
+            location.href='input.html';
+        }
+    </script>
 </head>
 
 <body onmousedown="return false" onselectstart="return false" >
@@ -40,13 +46,13 @@
 
             <div id="box">
                 <img src="/Images/Steel.jpeg" alt="" srcset="">
-                <button class="btn" onclick="location.href='Input.html'">Stainless Steel</button>
+                <button class="btn" onclick="categories('Stainless_Steel')">Stainless Steel</button>
                 <p>Steel is a combination of two elements, iron and carbon. Steel are broken is broken into four types and then in those types steel is broken down into grades. There are four main types of steel, Carbon Steels, Alloy Steels, Stainless Steels, Tool Steels. </p>
             </div>
 
             <div id="box">
                 <img src="/Images/Cast Iron.jpeg" alt="" srcset="">
-                <button class="btn">Alloy Steel</button>
+                <button class="btn" onclick="categories('Alloy_Steel')">Alloy Steel</button>
                 <p>Cast Iron, an alloy of iron that contains 2 to 4 percent carbon, along with varying amounts of silicon and manganese and traces of impurities such as sulfur and phosphorus. It is made by reducing iron ore in a blast furnace.</p>
             </div>
 
