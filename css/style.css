@@ -194,7 +194,8 @@ body{
 /* about  */
 .column {
     float: left;
-    width: 33.3%;
+    width: fit-content;
+    min-width: 33vw;
     margin-bottom: 16px;
     padding: 0 8px;
 }
