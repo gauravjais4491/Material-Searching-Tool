@@ -463,76 +463,84 @@ const Stainless_Steel = `[]`;
 const Alloy_Steel = `[]`;
 const Oxide_Ceramic = `[]`;
 const Silicate_Ceramic = `[]`;
+const Carbide_Ceramic = `[]`;
+const Nitride_Ceramic = `[]`;
 
 function search() {
-  const cat = localStorage.getItem("category");
-  var list = [];
-  switch (cat) {
-    case "HCS":
-      list = JSON.parse(HCS);
-      break;
-    case "MCS":
-      list = JSON.parse(MCS);
-      break;
-    case "LCS":
-      list = JSON.parse(LCS);
-      break;
-    case "Non_Ferous":
-      list = JSON.parse(Non_Ferous);
-      break;
-    case "Cast_Iron":
-      list = JSON.parse(Cast_Iron);
-      break;
-    case "Stainless_Steel":
-      list = JSON.parse(Stainless_Steel);
-      break;
-    case "Alloy_Steel":
-      list = JSON.parse(Alloy_Steel);
-      break;
-    case "Oxide_Ceramic":
-      list = JSON.parse(Oxide_Ceramic);
-      break;
-    case "Silicate_Ceramic":
-      list = JSON.parse(Silicate_Ceramic);
-      break;
-  }
-  var mod = document.getElementById("modulus").value;
-  var den = document.getElementById("density").value;
-  var rate = document.getElementById("ratio").value;
-  var crbn = document.getElementById("carbon").value;
-
-  list.map((item) => {
-    if (
-      item.Density <= den ||
-      item["Young_Modulus"] <= mod ||
-      item["Percentage_Carbon"] <= crbn ||
-      item["Poisson_Ratio"] <= rate
-    ) {
-      var material = document.createElement("tr");
-      var name = document.createElement("td");
-      var modulus = document.createElement("td");
-      var ratio = document.createElement("td");
-      var density = document.createElement("td");
-      var carbon = document.createElement("td");
-      name.innerText = item["Material_Name"];
-      material.appendChild(name);
-      modulus.innerText = item["Young_Modulus"];
-      material.appendChild(modulus);
-      ratio.innerText = item["Poisson_Ratio"];
-      material.appendChild(ratio);
-      density.innerText = item.Density;
-      material.appendChild(density);
-      carbon.innerText = item["Percentage_Carbon"];
-      material.appendChild(carbon);
-      document.getElementById("outputTable").appendChild(material);
+    const cat = localStorage.getItem("category");
+    var list = [];
+    switch (cat) {
+        case "HCS":
+            list = JSON.parse(HCS);
+            break;
+        case "MCS":
+            list = JSON.parse(MCS);
+            break;
+        case "LCS":
+            list = JSON.parse(LCS);
+            break;
+        case "Non_Ferous":
+            list = JSON.parse(Non_Ferous);
+            break;
+        case "Cast_Iron":
+            list = JSON.parse(Cast_Iron);
+            break;
+        case "Stainless_Steel":
+            list = JSON.parse(Stainless_Steel);
+            break;
+        case "Alloy_Steel":
+            list = JSON.parse(Alloy_Steel);
+            break;
+        case "Oxide_Ceramic":
+            list = JSON.parse(Oxide_Ceramic);
+            break;
+        case "Silicate_Ceramic":
+            list = JSON.parse(Silicate_Ceramic);
+            break;
+        case "Carbide_Ceramic":
+            list = JSON.parse(Carbide_Ceramic);
+            break;
+        case "Nitride_Ceramic":
+            list = JSON.parse(Nitride_Ceramic);
+            break;
     }
-  });
+    var mod = document.getElementById("modulus").value;
+    var den = document.getElementById("density").value;
+    var rate = document.getElementById("ratio").value;
+    var crbn = document.getElementById("carbon").value;
 
-  if (document.getElementById("outputTable").innerText == "") {
-    window.alert("No Matching materials found!!!");
-  }
+    list.map((item) => {
+        if (
+            item.Density <= den ||
+            item["Young_Modulus"] <= mod ||
+            item["Percentage_Carbon"] <= crbn ||
+            item["Poisson_Ratio"] <= rate
+        ) {
+            var material = document.createElement("tr");
+            var name = document.createElement("td");
+            var modulus = document.createElement("td");
+            var ratio = document.createElement("td");
+            var density = document.createElement("td");
+            var carbon = document.createElement("td");
+            name.innerText = item["Material_Name"];
+            material.appendChild(name);
+            modulus.innerText = item["Young_Modulus"];
+            material.appendChild(modulus);
+            ratio.innerText = item["Poisson_Ratio"];
+            material.appendChild(ratio);
+            density.innerText = item.Density;
+            material.appendChild(density);
+            carbon.innerText = item["Percentage_Carbon"];
+            material.appendChild(carbon);
+            document.getElementById("outputTable").appendChild(material);
+        }
+    });
+
+    if (document.getElementById("outputTable").innerText == "") {
+        window.alert("No Matching materials found!!!");
+    }
 }
 
 function reset() {
-  location.reload();
+    location.reload();
 }
