@@ -1,4 +1,4 @@
-const data = `[
+const HCS = `[
     {
         "Material_Name": "AISI 1059",
         "Young_Modulus": 200,
@@ -162,7 +162,7 @@ const data = `[
     }
 ]`;
 
-const data1 = `[
+const MCS = `[
     {
         "Material_Name": "AISI 409",
         "Young_Modulus": 206,
@@ -300,7 +300,7 @@ const data1 = `[
         "Young_Modulus": 205,
         "Poisson_Ratio": 0.29,
         "Percentage_Carbon": 0.45,
-        "Density":_7.85
+        "Density": 7.85
     },
     {
         "Material_Name": "AISI 1146",
@@ -310,7 +310,7 @@ const data1 = `[
     }
 ]`;
 
-const data2 = `[
+const LCS = `[
     {
         "Material_Name": "AISI 304",
         "Young_Modulus": 193,
@@ -457,16 +457,51 @@ const data2 = `[
     }
 ]`;
 
-const HCS = JSON.parse(data);
+const Non_Ferous = `[]`;
+const Cast_Iron = `[]`;
+const Stainless_Steel = `[]`;
+const Alloy_Steel = `[]`;
+const Oxide_Ceramic = `[]`;
+const Silicate_Ceramic = `[]`;
 
 function search() {
-  // const sheet = (metals == "hcs") ? data : (metals == "mcs") ? data1 :data2;
+  const cat = localStorage.getItem("category");
+  var list = [];
+  switch (cat) {
+    case "HCS":
+      list = JSON.parse(HCS);
+      break;
+    case "MCS":
+      list = JSON.parse(MCS);
+      break;
+    case "LCS":
+      list = JSON.parse(LCS);
+      break;
+    case "Non_Ferous":
+      list = JSON.parse(Non_Ferous);
+      break;
+    case "Cast_Iron":
+      list = JSON.parse(Cast_Iron);
+      break;
+    case "Stainless_Steel":
+      list = JSON.parse(Stainless_Steel);
+      break;
+    case "Alloy_Steel":
+      list = JSON.parse(Alloy_Steel);
+      break;
+    case "Oxide_Ceramic":
+      list = JSON.parse(Oxide_Ceramic);
+      break;
+    case "Silicate_Ceramic":
+      list = JSON.parse(Silicate_Ceramic);
+      break;
+  }
   var mod = document.getElementById("modulus").value;
   var den = document.getElementById("density").value;
   var rate = document.getElementById("ratio").value;
   var crbn = document.getElementById("carbon").value;
 
-  HCS.map((item) => {
+  list.map((item) => {
     if (
       item.Density <= den ||
       item["Young_Modulus"] <= mod ||
@@ -492,4 +527,12 @@ function search() {
       document.getElementById("outputTable").appendChild(material);
     }
   });
+
+  if (document.getElementById("outputTable").innerText == "") {
+    window.alert("No Matching materials found!!!");
+  }
+}
+
+function reset() {
+  location.reload();
 }
