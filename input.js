@@ -473,6 +473,7 @@ const Smart_Material = `[]`;
 const Composite = `[]`;
 
 function search() {
+    document.getElementById("outputTable").innerHTML=null;
     const cat = localStorage.getItem("category");
     var list = [];
     switch (cat) {
@@ -535,10 +536,10 @@ function search() {
 
     list.map((item) => {
         if (
-            item.Density <= den ||
-            item["Young_Modulus"] <= mod ||
-            item["Percentage_Carbon"] <= crbn ||
-            item["Poisson_Ratio"] <= rate
+            item.Density>= den-1 && item.Density <= den+1 ||
+            item["Young_Modulus"]>=mod-1 && item["Young_Modulus"]<= mod+1 ||
+            item["Percentage_Carbon"]>=crbn-1 && item["Percentage_Carbon"]<= crbn+1 ||
+            item["Poisson_Ratio"]>=rate-1 &&  item["Poisson_Ratio"]<= rate
         ) {
             var material = document.createElement("tr");
             var name = document.createElement("td");
