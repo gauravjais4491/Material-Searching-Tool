@@ -313,6 +313,9 @@ td{
 
 /*for mobiles*/
 @media screen and (max-width: 600px) {
+    .Categories{
+        font-size: 3.5vw;
+    }
     .navbar img {
         height: 55px;
         width: 55px;
