@@ -658,8 +658,8 @@ function search() {
         if (
             (item.Density >= den - 1 && item.Density <= den + 1) ||
             (item["Young_Modulus"] >= mod - 5 && item["Young_Modulus"] <= mod + 5) ||
-            (item["Percentage_Carbon"] >= crbn - 1 && item["Percentage_Carbon"] <= crbn + 1) ||
-            (item["Poisson_Ratio"] >= rate - 1 && item["Poisson_Ratio"] <= rate)
+            (item["Percentage_Carbon"] >= crbn - 0.01 && item["Percentage_Carbon"] <= crbn + 0.01) ||
+            (item["Poisson_Ratio"] >= rate - 0.05 && item["Poisson_Ratio"] <= rate + 0.05)
         ) {
             var material = document.createElement("tr");
             var name = document.createElement("td");
