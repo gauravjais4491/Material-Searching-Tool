@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bree+Serif&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous">
+    </script> -->
 </head>
+
 <body onload='document.form1.text1.focus()'>
-    
+
     <nav class="navbar">
         <div class="logo">
             <img src="logo.jpg" alt="">
@@ -23,13 +27,16 @@
         </ul>
     </nav>
     <div class="container">
-        <form name="form1" >
+        <form name="form1">
             <label for="fname">First Name</label>
-            <input type="text" id="fname" name="firstname" pattern="[a-zA-Z][a-zA-Z ]{2,}" required placeholder="Your name..">
+            <input type="text" id="fname" name="firstname" pattern="[a-zA-Z][a-zA-Z ]{2,}" required
+                placeholder="Your name..">
             <label for="lname">Last Name</label>
-            <input type="text" id="lname" name="lastname" pattern="[a-zA-Z][a-zA-Z ]{2,}" required placeholder="Your last name..">
+            <input type="text" id="lname" name="lastname" pattern="[a-zA-Z][a-zA-Z ]{2,}" required
+                placeholder="Your last name..">
             <label for="email">Your Email</label>
-            <input type="text" id="email" name="email" placeholder="Enter Your Email..">
+            <input type="text" id="email" name="email" onchange="ValidateEmail(document.form1.email)"
+                placeholder="Enter Your Email..">
             <label for="state">State</label>
             <select id="state" name="state">
                 <option>Choose here..</option>
@@ -67,9 +74,10 @@
             <label for="subject">Subject</label>
             <textarea id="subject" name="subject" placeholder="Write Your matter of concern here.."
                 style="height:200px"></textarea>
-            <input type="submit" value="Submit" onclick="ValidateEmail(document.form1.email)">
+            <input type="submit" value="Submit">
         </form>
     </div>
     <script src="input.js"></script>
 </body>
+
 </html>

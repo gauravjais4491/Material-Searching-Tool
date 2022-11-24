@@ -459,7 +459,127 @@ const LCS = `[
 
 const Non_Ferous = `[]`;
 const Cast_Iron = `[]`;
-const Stainless_Steel = `[]`;
+const Stainless_Steel = `[
+    {
+        "Material_Name": "SS301",
+        "Young_Modulus": 197,
+        "Poisson_Ratio": 0.275,
+        "Percentage_Carbon": 0.15,
+        "Density": 8.03
+    },
+    {
+        "Material_Name": "SS302",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.15,
+        "Density": 7.9
+    },
+    {
+        "Material_Name": "SS303",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.28,
+        "Percentage_Carbon": 0.15,
+        "Density": 8.03
+    },
+    {
+        "Material_Name": "SS304",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.08,
+        "Density": 8
+    },
+    {
+        "Material_Name": "SS304L",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.29,
+        "Percentage_Carbon": 0.03,
+        "Density": 7.9
+    },
+    {
+        "Material_Name": "SS304H",
+        "Young_Modulus": 190,
+        "Poisson_Ratio": 0.275,
+        "Percentage_Carbon": 0.1,
+        "Density": 8
+    },
+    {
+        "Material_Name": "SS309",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.2,
+        "Density": 8
+    },
+    {
+        "Material_Name": "SS309H",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.1,
+        "Density": 7.9
+    },
+    {
+        "Material_Name": "SS309S",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.15,
+        "Density": 7.89
+    },
+    {
+        "Material_Name": "SS310S",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.25,
+        "Density": 8
+    },
+    {
+        "Material_Name": "SS314",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.25,
+        "Density": 7.8
+    },
+    {
+        "Material_Name": "SS316",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.08,
+        "Density": 8
+    },
+    {
+        "Material_Name": "SS316F",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.08,
+        "Density": 8
+    },
+    {
+        "Material_Name": "SS316L",
+        "Young_Modulus": 193,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.08,
+        "Density": 8
+    },
+    {
+        "Material_Name": "SS317",
+        "Young_Modulus": 195,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.08,
+        "Density": 8
+    },
+    {
+        "Material_Name": "SS317L",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.03,
+        "Density": 8
+    },
+    {
+        "Material_Name": "SS317LMN",
+        "Young_Modulus": 200,
+        "Poisson_Ratio": 0.3,
+        "Percentage_Carbon": 0.03,
+        "Density": 8
+    }
+]`;
 const Alloy_Steel = `[]`;
 const Oxide_Ceramic = `[]`;
 const Silicate_Ceramic = `[]`;
@@ -473,7 +593,7 @@ const Smart_Material = `[]`;
 const Composite = `[]`;
 
 function search() {
-    document.getElementById("outputTable").innerHTML=null;
+    document.getElementById("outputTable").innerHTML = null;
     const cat = localStorage.getItem("category");
     var list = [];
     switch (cat) {
@@ -536,10 +656,10 @@ function search() {
 
     list.map((item) => {
         if (
-            item.Density>= den-1 && item.Density <= den+1 ||
-            item["Young_Modulus"]>=mod-1 && item["Young_Modulus"]<= mod+1 ||
-            item["Percentage_Carbon"]>=crbn-1 && item["Percentage_Carbon"]<= crbn+1 ||
-            item["Poisson_Ratio"]>=rate-1 &&  item["Poisson_Ratio"]<= rate
+            (item.Density >= den - 1 && item.Density <= den + 1) ||
+            (item["Young_Modulus"] >= mod - 5 && item["Young_Modulus"] <= mod + 5) ||
+            (item["Percentage_Carbon"] >= crbn - 1 && item["Percentage_Carbon"] <= crbn + 1) ||
+            (item["Poisson_Ratio"] >= rate - 1 && item["Poisson_Ratio"] <= rate)
         ) {
             var material = document.createElement("tr");
             var name = document.createElement("td");
@@ -570,18 +690,14 @@ function reset() {
     location.reload();
 }
 
-function ValidateEmail(inputText)
-{
-var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-if(inputText.value.match(mailformat))
-{
-document.form1.text1.focus();
-return true;
-}
-else
-{
-alert("You have entered an invalid email address!");
-document.form1.text1.focus();
-return false;
-}
+function ValidateEmail(inputText) {
+    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (inputText.value.match(mailformat)) {
+        document.form1.text1.focus();
+        return true;
+    } else {
+        alert("You have entered an invalid email address!");
+        document.form1.text1.focus();
+        return false;
+    }
 }
