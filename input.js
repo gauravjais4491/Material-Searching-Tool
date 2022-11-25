@@ -649,37 +649,38 @@ function search() {
             list = JSON.parse(Composite);
             break;
     }
-    var mod = document.getElementById("modulus").value;
-    var den = document.getElementById("density").value;
-    var rate = document.getElementById("ratio").value;
-    var crbn = document.getElementById("carbon").value;
-
-    list.map((item) => {
-        if (
-            (item.Density >= den - 1 && item.Density <= den + 1) ||
-            (item["Young_Modulus"] >= mod - 5 && item["Young_Modulus"] <= mod + 5) ||
-            (item["Percentage_Carbon"] >= crbn - 0.01 && item["Percentage_Carbon"] <= crbn + 0.01) ||
-            (item["Poisson_Ratio"] >= rate - 0.05 && item["Poisson_Ratio"] <= rate + 0.05)
-        ) {
-            var material = document.createElement("tr");
-            var name = document.createElement("td");
-            var modulus = document.createElement("td");
-            var ratio = document.createElement("td");
-            var density = document.createElement("td");
-            var carbon = document.createElement("td");
-            name.innerText = item["Material_Name"];
-            material.appendChild(name);
-            modulus.innerText = item["Young_Modulus"];
-            material.appendChild(modulus);
-            ratio.innerText = item["Poisson_Ratio"];
-            material.appendChild(ratio);
-            density.innerText = item.Density;
-            material.appendChild(density);
-            carbon.innerText = item["Percentage_Carbon"];
-            material.appendChild(carbon);
-            document.getElementById("outputTable").appendChild(material);
-        }
-    });
+    var mod = parseFloat(document.getElementById("modulus").value);
+    var den = parseFloat(document.getElementById("density").value);
+    var rate = parseFloat(document.getElementById("ratio").value);
+    var crbn = parseFloat(document.getElementById("carbon").value);
+    if (((mod <= 215 && mod >= 185) || isNaN(mod)) && ((den >= 6 && den <= 10) || isNaN(den)) && ((rate <= 1 && rate >= -1) || isNaN(rate)) && ((crbn <= 2 && crbn >= -1) || isNaN(crbn))) {
+        list.map((item) => {
+            if (
+                (item.Density >= den - 1 && item.Density <= den + 1) ||
+                (item["Young_Modulus"] >= mod - 5 && item["Young_Modulus"] <= mod + 5) ||
+                (item["Percentage_Carbon"] >= crbn - 0.01 && item["Percentage_Carbon"] <= crbn + 0.01) ||
+                (item["Poisson_Ratio"] >= rate - 0.05 && item["Poisson_Ratio"] <= rate + 0.05)
+            ) {
+                var material = document.createElement("tr");
+                var name = document.createElement("td");
+                var modulus = document.createElement("td");
+                var ratio = document.createElement("td");
+                var density = document.createElement("td");
+                var carbon = document.createElement("td");
+                name.innerText = item["Material_Name"];
+                material.appendChild(name);
+                modulus.innerText = item["Young_Modulus"];
+                material.appendChild(modulus);
+                ratio.innerText = item["Poisson_Ratio"];
+                material.appendChild(ratio);
+                density.innerText = item.Density;
+                material.appendChild(density);
+                carbon.innerText = item["Percentage_Carbon"];
+                material.appendChild(carbon);
+                document.getElementById("outputTable").appendChild(material);
+            }
+        });
+    }
 
     if (document.getElementById("outputTable").innerText == "") {
         window.alert("No Matching materials found!!!");
