@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Metal Searching Tool</title>
+    <link rel="icon" href="../../images/logo.jpg" type="image/icon type" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function categories(category) {
+        localStorage.setItem("category", category);
+        location.href = "../Input.html";
+      }
+    </script>
+  </head>
+
+  <body onmousedown="return false" onselectstart="return false">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../images/logo.jpg" alt="" />
+      </div>
+      <ul class="nav">
+        <li id="item1"><a href="../../index.html">Home</a></li>
+        <li id="item3"><a href="#">Services</a></li>
+        <li id="item4"><a href="../about.html">About</a></li>
+        <li id="item2"><a href="../contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <section class="home">
+      <h1>Welcome To Online Metal Searching Tool</h1>
+    </section>
+
+    <section class="Categories">
+      <p>
+        There are five categories of ceramic, which ceramic are you looking for:
+      </p>
+    </section>
+
+    <div class="service-container">
+      <div class="services">
+        <div id="box">
+          <img src="../../images/Oxide Ceramic.PNG" alt="" srcset="" />
+          <button class="btn" onclick="categories('Oxide_Ceramic')">
+            Oxide Ceramic
+          </button>
+
+          <p>
+            Oxide ceramics are inorganic compounds of metallic (e.g., Al, Zr,
+            Ti, Mg) or metalloid (Si) elements with oxygen. Oxides can be
+            combined with nitrogen or carbon to form more complex oxynitride or
+            oxycarbide ceramics. Oxide ceramics have high melting points.
+          </p>
+        </div>
+
+        <div id="box">
+          <img src="../../images/Silicate Ceramic.jpg" alt="" srcset="" />
+          <button class="btn" onclick="categories('Silicate_Ceramic')">
+            Silicate Ceramic
+          </button>
+
+          <p>
+            Silicate Ceramics were the first technical ceramics developed to
+            support early electrical technologies, including Magnesium Silicates
+            (Steatite and Cordierite) and Mullite. Because of the large volumes
+            of product involved, traditional ceramics tend to be manufactured
+            from naturally occurring raw materials
+          </p>
+        </div>
+
+        <div id="box">
+          <img src="../../images/Carbide Ceramic.jpeg" alt="" srcset="" />
+          <button class="btn" onclick="categories('Carbide_Ceramic')">
+            Carbide Ceramic
+          </button>
+          <p>
+            Carbide ceramics are extremely resistant to high temperatures,
+            abrasion, and corrosion. They have a high thermal and variable
+            electrical conductivity and are mainly used in mechanical
+            engineering, chemical, and power engineering, microelectronics as
+            well as space engineering.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="service-container">
+      <div class="services">
+        <div id="box">
+          <img src="../../images/Nitride Ceramic.jpg" alt="" srcset="" />
+          <button class="btn" onclick="categories('Nitride_Ceramic')">
+            Nitride Ceramic
+          </button>
+          <p>
+            Nitride ceramics have experienced tremendous development in the last
+            decades. Whereas Si3N4 and SiAlON-based ceramics were at forefront
+            of fundamental research related to nitride ceramics, the field has
+            expanded significantly, including more and more nitride
+            compositions.
+          </p>
+        </div>
+
+        <div id="box">
+          <img src="../../images/Glass_Ceramic.jpeg" alt="" srcset="" />
+          <button class="btn" onclick="categories('Glass_Ceramic')">
+            Glass Ceramic
+          </button>
+          <p>
+            Glass Ceramic materials have the same chemical compositions as
+            glasses but differ from them in that they are typically 95-98%
+            crystalline by volume, with only a small percentage vitreous. The
+            crystals themselves are generally very small, less than 1µm, and
+            most often very uniform in size.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      All rights reserved | Online Metal Searching Tool
+    </p>
+  </footer>
+</html>

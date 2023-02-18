@@ -291,7 +291,7 @@ const MCS = `[
     {
         "Material_Name": "AISI 1141",
         "Young_Modulus": 205,
-        "Poissson_Ratio": 0.29,
+        "Poisson_Ratio": 0.29,
         "Percentage_Carbon": 0.45,
         "Density": 7.85
     },
@@ -319,7 +319,7 @@ const LCS = `[
         "Density": 8
     },
     {
-        "Material_Name": "ASTM A815",
+        "Material_Name": "AISI A815",
         "Young_Modulus": 200,
         "Poisson_Ratio": 0.3,
         "Percentage_Carbon": 0.03,
@@ -429,7 +429,7 @@ const LCS = `[
     },
     {
         "Material_Name": "AISI 1117",
-        "Young _odulus": 205,
+        "Young_Modulus": 205,
         "Poisson_Ratio": 0.29,
         "Percentage_Carbon": 0.2,
         "Density": 7.85
@@ -457,7 +457,7 @@ const LCS = `[
     }
 ]`;
 
-const Non_Ferous = `[]`;
+const Non_Ferrous = `[]`;
 const Cast_Iron = `[]`;
 const Stainless_Steel = `[
     {
@@ -593,112 +593,120 @@ const Smart_Material = `[]`;
 const Composite = `[]`;
 
 function search() {
-    document.getElementById("outputTable").innerHTML = null;
-    const cat = localStorage.getItem("category");
-    var list = [];
-    switch (cat) {
-        case "HCS":
-            list = JSON.parse(HCS);
-            break;
-        case "MCS":
-            list = JSON.parse(MCS);
-            break;
-        case "LCS":
-            list = JSON.parse(LCS);
-            break;
-        case "Non_Ferous":
-            list = JSON.parse(Non_Ferous);
-            break;
-        case "Cast_Iron":
-            list = JSON.parse(Cast_Iron);
-            break;
-        case "Stainless_Steel":
-            list = JSON.parse(Stainless_Steel);
-            break;
-        case "Alloy_Steel":
-            list = JSON.parse(Alloy_Steel);
-            break;
-        case "Oxide_Ceramic":
-            list = JSON.parse(Oxide_Ceramic);
-            break;
-        case "Silicate_Ceramic":
-            list = JSON.parse(Silicate_Ceramic);
-            break;
-        case "Carbide_Ceramic":
-            list = JSON.parse(Carbide_Ceramic);
-            break;
-        case "Nitride_Ceramic":
-            list = JSON.parse(Nitride_Ceramic);
-            break;
-        case "Alloys":
-            list = JSON.parse(Alloys);
-            break;
-        case "Wrought_Iron":
-            list = JSON.parse(Wrought_Iron);
-            break;
-        case "Glass_Ceramic":
-            list = JSON.parse(Glass_Ceramic);
-            break;
-        case "Polymer":
-            list = JSON.parse(Polymer);
-            break;
-        case "Smart_Material":
-            list = JSON.parse(Smart_Material);
-            break;
-        case "Composite":
-            list = JSON.parse(Composite);
-            break;
-    }
-    var mod = parseFloat(document.getElementById("modulus").value);
-    var den = parseFloat(document.getElementById("density").value);
-    var rate = parseFloat(document.getElementById("ratio").value);
-    var crbn = parseFloat(document.getElementById("carbon").value);
-    if (((mod <= 215 && mod >= 185) || isNaN(mod)) && ((den >= 6 && den <= 10) || isNaN(den)) && ((rate <= 1 && rate >= -1) || isNaN(rate)) && ((crbn <= 2 && crbn >= -1) || isNaN(crbn))) {
-        list.map((item) => {
-            if (
-                (item.Density >= den - 1 && item.Density <= den + 1) ||
-                (item["Young_Modulus"] >= mod - 5 && item["Young_Modulus"] <= mod + 5) ||
-                (item["Percentage_Carbon"] >= crbn - 0.01 && item["Percentage_Carbon"] <= crbn + 0.01) ||
-                (item["Poisson_Ratio"] >= rate - 0.05 && item["Poisson_Ratio"] <= rate + 0.05)
-            ) {
-                var material = document.createElement("tr");
-                var name = document.createElement("td");
-                var modulus = document.createElement("td");
-                var ratio = document.createElement("td");
-                var density = document.createElement("td");
-                var carbon = document.createElement("td");
-                name.innerText = item["Material_Name"];
-                material.appendChild(name);
-                modulus.innerText = item["Young_Modulus"];
-                material.appendChild(modulus);
-                ratio.innerText = item["Poisson_Ratio"];
-                material.appendChild(ratio);
-                density.innerText = item.Density;
-                material.appendChild(density);
-                carbon.innerText = item["Percentage_Carbon"];
-                material.appendChild(carbon);
-                document.getElementById("outputTable").appendChild(material);
-            }
-        });
-    }
+  document.getElementById("outputTable").innerHTML = null;
+  const cat = localStorage.getItem("category");
+  var list = [];
+  switch (cat) {
+    case "HCS":
+      list = JSON.parse(HCS);
+      break;
+    case "MCS":
+      list = JSON.parse(MCS);
+      break;
+    case "LCS":
+      list = JSON.parse(LCS);
+      break;
+    case "Non_Ferrous":
+      list = JSON.parse(Non_Ferrous);
+      break;
+    case "Cast_Iron":
+      list = JSON.parse(Cast_Iron);
+      break;
+    case "Stainless_Steel":
+      list = JSON.parse(Stainless_Steel);
+      break;
+    case "Alloy_Steel":
+      list = JSON.parse(Alloy_Steel);
+      break;
+    case "Oxide_Ceramic":
+      list = JSON.parse(Oxide_Ceramic);
+      break;
+    case "Silicate_Ceramic":
+      list = JSON.parse(Silicate_Ceramic);
+      break;
+    case "Carbide_Ceramic":
+      list = JSON.parse(Carbide_Ceramic);
+      break;
+    case "Nitride_Ceramic":
+      list = JSON.parse(Nitride_Ceramic);
+      break;
+    case "Alloys":
+      list = JSON.parse(Alloys);
+      break;
+    case "Wrought_Iron":
+      list = JSON.parse(Wrought_Iron);
+      break;
+    case "Glass_Ceramic":
+      list = JSON.parse(Glass_Ceramic);
+      break;
+    case "Polymer":
+      list = JSON.parse(Polymer);
+      break;
+    case "Smart_Material":
+      list = JSON.parse(Smart_Material);
+      break;
+    case "Composite":
+      list = JSON.parse(Composite);
+      break;
+  }
+  var mod = parseFloat(document.getElementById("modulus").value);
+  var den = parseFloat(document.getElementById("density").value);
+  var rate = parseFloat(document.getElementById("ratio").value);
+  var crbn = parseFloat(document.getElementById("carbon").value);
+  if (
+    ((mod <= 215 && mod >= 185) || isNaN(mod)) &&
+    ((den >= 6 && den <= 10) || isNaN(den)) &&
+    ((rate <= 1 && rate >= -1) || isNaN(rate)) &&
+    ((crbn <= 2 && crbn >= -1) || isNaN(crbn))
+  ) {
+    list.map((item) => {
+      if (
+        (item.Density >= den - 1 && item.Density <= den + 1) ||
+        (item["Young_Modulus"] >= mod - 5 &&
+          item["Young_Modulus"] <= mod + 5) ||
+        (item["Percentage_Carbon"] >= crbn - 0.01 &&
+          item["Percentage_Carbon"] <= crbn + 0.01) ||
+        (item["Poisson_Ratio"] >= rate - 0.05 &&
+          item["Poisson_Ratio"] <= rate + 0.05)
+      ) {
+        var material = document.createElement("tr");
+        var name = document.createElement("td");
+        var modulus = document.createElement("td");
+        var ratio = document.createElement("td");
+        var density = document.createElement("td");
+        var carbon = document.createElement("td");
+        name.innerText = item["Material_Name"];
+        material.appendChild(name);
+        modulus.innerText = item["Young_Modulus"];
+        material.appendChild(modulus);
+        ratio.innerText = item["Poisson_Ratio"];
+        material.appendChild(ratio);
+        density.innerText = item.Density;
+        material.appendChild(density);
+        carbon.innerText = item["Percentage_Carbon"];
+        material.appendChild(carbon);
+        document.getElementById("outputTable").appendChild(material);
+      }
+    });
+  }
 
-    if (document.getElementById("outputTable").innerText == "") {
-        window.alert("No Matching materials found!!!");
-    }
+  if (document.getElementById("outputTable").innerText == "") {
+    window.alert("No Matching materials found!!!");
+  }
 }
 
 function reset() {
-    location.reload();
+  location.reload();
 }
 
 function ValidateEmail(inputText) {
-    var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (inputText.value.match(mailformat)) {
-        document.form1.text1.focus();
-        return true;
-    } else {
-        alert("You have entered an invalid email address!");
-        document.form1.text1.focus();
-        return false;
-    }
+  var mail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  if (inputText.value.match(mail)) {
+    document.form1.text1.focus();
+    return true;
+  } else {
+    alert("You have entered an invalid email address!");
+    document.form1.text1.focus();
+    return false;
+  }
 }

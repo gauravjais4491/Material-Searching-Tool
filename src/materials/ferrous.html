@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Online Metal Searching Tool</title>
+    <link rel="icon" href="../../images/logo.jpg" type="image/icon type" />
+    <link rel="stylesheet" href="../style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      function categories(category) {
+        localStorage.setItem("category", category);
+        location.href = "../Input.html";
+      }
+    </script>
+  </head>
+
+  <body onmousedown="return false" onselectstart="return false">
+    <nav class="navbar">
+      <div class="logo">
+        <img src="../../images/logo.jpg" alt="" />
+      </div>
+      <ul class="nav">
+        <li id="item1"><a href="../../index.html">Home</a></li>
+        <li id="item3"><a href="#">Services</a></li>
+        <li id="item4"><a href="../about.html">About</a></li>
+        <li id="item2"><a href="../contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+
+    <section class="home">
+      <h1>Welcome To Online Metal Searching Tool</h1>
+    </section>
+
+    <section class="Categories">
+      <p>
+        There are three categories of ferrous metal, which ferrous metal are you
+        looking for:
+      </p>
+    </section>
+
+    <div class="service-container">
+      <div class="services">
+        <div id="box">
+          <img src="../../images/Steel.jpeg" alt="" srcset="" />
+          <button class="btn" onclick="location.href='steel.html'">
+            Steel
+          </button>
+          <p>
+            Steel is a combination of two elements, iron, and carbon. Steel is
+            broken into four types and then in those types steel is broken down
+            into grades. Steel is used for making knives, tools, machines, etc.
+          </p>
+        </div>
+
+        <div id="box">
+          <img src="../../images/Cast Iron.jpeg" alt="" srcset="" />
+          <button class="btn" onclick="categories('Cast_Iron')">
+            Cast Iron
+          </button>
+          <p>
+            Cast Iron, is an alloy of iron that contains 2 to 4 percent carbon,
+            along with varying amounts of silicon and manganese and traces of
+            impurities such as sulfur and phosphorus. It is made by reducing
+            iron ore in a blast furnace.
+          </p>
+        </div>
+
+        <div id="box">
+          <img src="../../images/Wrought Iron.webp" alt="" srcset="" />
+          <button class="btn" onclick="categories('Wrought_Iron')">
+            Wrought Iron
+          </button>
+          <p>
+            Wrought iron is a soft, ductile, fibrous variety that is produced
+            from a semi-fused mass of relatively pure iron globules partially
+            surrounded by slag. It usually contains less than 0.1 percent carbon
+            and 1 or 2 percent slag.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>
+      Copyright ©
+      <script>
+        document.write(new Date().getFullYear());
+      </script>
+      All rights reserved | Online Metal Searching Tool
+    </p>
+  </footer>
+</html>
